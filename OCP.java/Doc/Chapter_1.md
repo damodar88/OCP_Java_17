@@ -19,3 +19,26 @@
     - Variables de Clase (static): Disponibles durante toda la vida del programa.
     - Destrucción de Objetos:Garbage Collection: Proceso automático de liberación de memoria en el heap.
     - Elegibilidad para GC: Un objeto es elegible cuando no tiene referencias apuntando a él o todas sus referencias están fuera de alcance. Distinción entre objeto y referencia.
+
+
+### Entorno Java: Componentes principales de Java, descarga del JDK. ###
+
+El JDK contiene el software mínimo necesario para el desarrollo en java. Son estos comandos:
+
+ - javac: Convierte los archivos con la extensión .java en .class (bytecode)
+ ```javac hola.java```
+ - java: Ejecuta el programa
+```java hola.class```
+ - jar: El .jar se hace con el comando jar o con una herramienta Maven/Gradle
+```jar cvf programa.jar *.class```
+ - javadoc: Genera la documentación los archivos .html se hace sobre un archivo .java y se suele usar la opción -d para el directorio
+```javadoc -d docs Hola.java```
+ - JRE: (Java Runtime Environment) Es el entorno de ejecución de Java. Ejecuta aplicaciones java ya compiladas. Incluye:
+   - JVM (Java Virtual Machine)
+   - Librerías estándar
+   - Archivos de configuración necesarios para correr programas.
+
+### Estructura de Clases: Campos, métodos, comentarios (una línea, multilínea, Javadoc). ###
+
+
+
