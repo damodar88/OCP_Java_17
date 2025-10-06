@@ -38,7 +38,21 @@ El JDK contiene el software mínimo necesario para el desarrollo en java. Son es
    - Librerías estándar
    - Archivos de configuración necesarios para correr programas.
 
-### Estructura de Clases: Campos, métodos, comentarios (una línea, multilínea, Javadoc). ###
+### Estructura de Clases: Campos, métodos, comentarios (una línea, multilínea, Javadoc), clases y archivos fuente. ###
+
+#### Estructura de una clase ####
+Las clases son la estructura básica en donde se escribe el código java. Donde se describen todas
+Sus partes y características.
+Para usar las clases creamos los objetos (Un objeto es una instancia de una clase en tiempo de
+de ejecución en memoria) un objeto se crea a partir de una clase la clase es como la plantilla él
+Marco para generar diferentes objetos. Estos Objetos se les llama instancia de una clase genere una
+Representación de la clase. Una referencia es una variable que apunta un objeto.
+
+##### Campos y métodos #####
 
 
+
+##### Comentarios #####
+
+#### Clases y archivos fuente ####
 
