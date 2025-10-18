@@ -36,14 +36,22 @@
 El JDK contiene el software mínimo necesario para el desarrollo en java. Son estos comandos:
 
  - javac: Convierte los archivos con la extensión .java en .class (bytecode)
- ```javac hola.java```
- - java: Ejecuta el programa
-```java hola.class```
+ ``` 
+javac hola.java
+ ```
+ - java: Ejecuta el programa no se pone la extencion .class de bitecode
+```
+java hola
+```
  - jar: El .jar se hace con el comando jar o con una herramienta Maven/Gradle
-```jar cvf programa.jar *.class```
+```
+jar cvf programa.jar *.class
+```
  - javadoc: Genera la documentación los archivos .html se hace sobre un archivo .java y se suele usar la opción -d para 
 el directorio
-```javadoc -d docs Hola.java```
+```
+javadoc -d docs Hola.java
+```
  - JRE: (Java Runtime Environment) Es el entorno de ejecución de Java. Ejecuta aplicaciones java ya compiladas. Incluye:
    - JVM (Java Virtual Machine)
    - Librerías estándar
@@ -62,6 +70,7 @@ Representación de la clase. Una referencia es una variable que apunta un objeto
 ##### Campos y métodos #####
 
 ##### Comentarios #####
+
 #### Clases y archivos fuente ####
 
 
@@ -100,7 +109,10 @@ serian de otro tipo de datos.
 
 ##### []: #####
 [] es el arreglo que el metodo contiene como entrada que son de tipo string y parte en 0. Es un arreglo de elementos que
-espera como entrada el metodo main(). Este puede variar en String... , String args[].
+espera como entrada el metodo main(). Este puede variar en String... nombreArreglo, String args[].
+String[] args
+String options[]
+String... friends
 
 ##### args: #####
 args es el nombre de la variable que contiene los argumentos que se pasan al programa que es de tipo String y arreglo,
@@ -113,3 +125,30 @@ por lo que es necesario, el nombre de la firma main() tiene que ser ese nombre y
 dato tiene que ser, [] el arreglo tiene que ir pero puede variar en como representarlo y args es el nombre que se puede 
 cambiar.
 
+##### Paso de parametros por el metodo main(): #####
+Tambien se pueden pasar parametros al metodo main() como argumentos ya que es un arreglo de String.
+
+```
+public static void main(String[] args) {
+    System.out.println( args [0]);
+    System.out.println( args [1]);
+}
+```
+
+``` javac miclase.java ```
+``` java miclase hola mundo ```
+
+Esto imprime en pantalla hola mundo pasando los parametros hola y mundo como argumentos a los dos String del arreglo pero
+si pasas mas parametros esto dara un error de que no hay mas espacio en el arreglo.
+
+```
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException:
+Index 1 out of bounds for length 1
+at miclase.main(Zoo.java:
+```
+Este tambien es un ejemplo valido de un metodo main() ya que a pesar de ser final sigue cumpliendo lo necesarioa para ser
+llamado y ejecutado por la JVM.
+
+``` 
+public final static void main(final String[] nombreDelArreglo){};
+```
