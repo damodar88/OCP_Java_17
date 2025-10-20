@@ -41,5 +41,5 @@ markdown_extensions:
 
 nav:
   - Introduccion: docs/index.md
-  - Capitulo 1: Capter_1.md
-  - Capitulo 2: Capter_2.md
+  - Capitulo 1: Chapter_1.md
+  - Capitulo 2: Chapter_2.md
