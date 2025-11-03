@@ -1,8 +1,8 @@
 site_name: Estudio Certificación Java 17 OCP
 site_description: Apuntes y resúmenes para la certificación Oracle Java SE 17
 site_author: Tu Nombre
-repo_url: https://github.com/tuusuario/tu-repo
-repo_name: tuusuario/tu-repo
+repo_url: https://github.com/damodar88/OCP_Java_17
+repo_name: damodar88/OCP_Java_17
 
 theme:
   name: material

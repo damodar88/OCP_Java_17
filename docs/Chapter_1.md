@@ -153,4 +153,19 @@ llamado y ejecutado por la JVM.
 public final static void main(final String[] nombreDelArreglo){};
 ```
 
+### Paquetes e Imports ###
+
+##### Imports #####
+
+En java existen miles de clases y librerias disponibles que nos permiten reutilizar codigo sin tener que duplicarlo. 
+Usamos la instruccion `import` para indicarle al compilador donde encontrar una clase o libreria especifica que queremos 
+utilizar.
+De esta forma, el compilador sabe exactamente donde buscar esa clase y puede reutilizar el codigo.
+
+Ademas, los imports ayudan a mantener nuestro codigo mas organizado y legible. Cuando importamos dos clases con el mismo 
+nombre(por ejemplo, java.util.Date y java.sql.Date), debemos usar el nombre completo de la clase(su ruta completa o nombre totalmente calificado) para evitar errores 
+de compilacion.
+
+
+##### Paquetes #####
 
